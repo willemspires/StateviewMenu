@@ -37,6 +37,7 @@ Tab:CreateToggle({
 Tab:CreateButton({
   Name = "Fix AFK",
   Callback = function()
+    local Player = game.Players.LocalPlayer
     Player:FindFirstChild("PlayerScripts"):FindFirstChild("AFKScript").Disabled = false
   end
 })
