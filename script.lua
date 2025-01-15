@@ -20,7 +20,7 @@ Tab:CreateButton({
   end
 })
 Tab:CreateToggle({
-  Name = "Lock AFK On",
+  Name = "AFK",
   Callback = function(Value)
     if Value then
       local Player = game.Players.LocalPlayer
@@ -31,8 +31,13 @@ Tab:CreateToggle({
       local Player = game.Players.LocalPlayer
       local AFKEvent = game:GetService("ReplicatedStorage"):FindFirstChild("AFK")
       AFKEvent:FireServer(false)
-      Player:FindFirstChild("PlayerScripts"):FindFirstChild("AFKScript").Disabled = false
     end
+  end
+})
+Tab:CreateButton({
+  Name = "Fix AFK",
+  Callback = function()
+    Player:FindFirstChild("PlayerScripts"):FindFirstChild("AFKScript").Disabled = false
   end
 })
 
@@ -49,3 +54,4 @@ Tab:CreateButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
   end
 })
+
