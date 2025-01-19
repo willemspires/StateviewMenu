@@ -113,7 +113,8 @@ local teleportsMapping = {
     ["Session Room"] = CFrame.new(-2053.2978515625, 48.066322326660156, -731.2392578125),
     ["Control Room"] = CFrame.new(-2261.17626953125, 48.061492919921875, -771.6943359375),
     ["Prison"] = CFrame.new(-2195.911376953125, 33.06635665893555, -708.8546752929688),
-    ["Sewers"] = CFrame.new(-2300.7353515625, 0.5608519315719604, -883.5501098632812)
+    ["Sewers"] = CFrame.new(-2300.7353515625, 0.5608519315719604, -883.5501098632812),
+    ["Table In Void"] = CFrame.new(593.965087890625, -155.41085815429688, 618.7930908203125)
 }
 local teleportChoices = {}
 for key, _ in pairs(teleportsMapping) do
